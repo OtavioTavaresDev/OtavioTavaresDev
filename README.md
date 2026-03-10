@@ -1,16 +1,52 @@
-## Hi there 👋
+# Hi, I'm Otávio Tavares
 
-<!--
-**OtavioTavaresDev/OtavioTavaresDev** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+Python Developer | Cybersecurity Enthusiast | Automation & Security Tools
 
-Here are some ideas to get you started:
+I build projects focused on cybersecurity, automation, backend systems, and security testing.
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+## Projects
+
+CyberGuardian  
+Cybersecurity monitoring tool for detecting suspicious processes and network behavior.
+
+Flask Security Testing Suite  
+Security testing environment for web applications.
+
+NetIntel  
+Network information analysis and monitoring tool.
+
+wifiBruteForceSUITkit  
+Educational project for studying WiFi security and password testing.
+
+## Tech Stack
+
+Python  
+Flask  
+Linux  
+Windows
+Cybersecurity tools  
+Automation scripts  
+Web scraping
+
+## GitHub Portfolio
+
+https://github.com/OtavioTavaresDev
+
+## Looking for opportunities
+
+I am currently looking for opportunities in:
+
+- Cybersecurity
+- Python Backend Development
+- Security Automation
+- Junior Developer roles
+
+If you know companies, projects, or platforms where I could contribute, I would greatly appreciate your recommendation.
+
+## Contact
+
+LinkedIn  
+https://linkedin.com/in/otavioaugustodesouzatavares
+
+Email  
+otaviotavaresdev@gmail.com
