@@ -1,121 +1,217 @@
-# Hi, I'm Otávio Tavares 👋
+# 🔥 AttackSim
 
-[![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://python.org)
-[![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
-[![Flask](https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white)](https://flask.palletsprojects.com/)
-[![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)](https://nodejs.org/)
-[![Express.js](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white)](https://expressjs.com/)
-[![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://reactjs.org/)
-[![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)](https://nextjs.org/)
-[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)](https://postgresql.org)
-[![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)](https://docker.com)
-[![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)](https://archlinux.org)
+[![Python](https://img.shields.io/badge/Python-3.10+-3776AB?logo=python&logoColor=white)](https://python.org)
+[![FastAPI](https://img.shields.io/badge/FastAPI-0.100+-009688?logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com)
+[![Next.js](https://img.shields.io/badge/Next.js-14-black?logo=next.js&logoColor=white)](https://nextjs.org)
+[![Docker](https://img.shields.io/badge/Docker-24.0+-2496ED?logo=docker&logoColor=white)](https://docker.com)
+[![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 
-**Full Stack Developer | Cybersecurity Specialist | Security Automation Engineer**
+## Continuous Attack Simulation Platform for Modern Security Teams
 
-I build tools that make security **continuous**, **automated**, and **developer-friendly**. I design and deliver production-ready applications integrating backend architecture, cybersecurity, and data analytics.
+**Simulate real-world attacks. Detect vulnerabilities early. Ship secure software.**
 
 ---
 
-## 🔍 For Recruiters
-
-| I'm looking for | My relevant experience |
-|----------------|------------------------|
-| 🔐 Cybersecurity (Red Team / Security Engineering) | Penetration testing, OWASP, 2FA, Linux hardening, intrusion detection |
-| 🐍 Python Backend Development | FastAPI, Flask, REST APIs, JWT, RBAC |
-| 🤖 Security Automation & DevSecOps | AttackSim, CI/CD (GitHub Actions), Docker sandboxes |
-| 💼 Full Stack Developer | React, Next.js, Node.js, PostgreSQL |
-
-📄 **Download my resume** – or keep scrolling for projects and tech stack.
+> ⚠️ **Important Notice**  
+> AttackSim is designed strictly for authorized security testing.  
+> - Only test systems you own or have explicit permission to test  
+> - All attack executions are sandboxed and controlled  
+> - Misuse of this tool may violate laws and regulations  
+> *This project was built with a responsible security mindset.*
 
 ---
 
-## 🔥 Featured Project: AttackSim
+## 🎯 Problem Statement
 
-### [AttackSim](https://github.com/OtavioTavaresDev/attacksim) – Continuous Attack Simulation Platform
+Modern development pipelines suffer from:
 
-[![GitHub stars](https://img.shields.io/github/stars/OtavioTavaresDev/attacksim?style=social)](https://github.com/OtavioTavaresDev/attacksim)
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/OtavioTavaresDev/attacksim/blob/main/LICENSE)
+- ❌ Infrequent and expensive penetration testing  
+- ❌ Lack of continuous security validation  
+- ❌ Limited offensive security expertise among developers  
+- ❌ Vulnerabilities reaching production environments  
 
-A **SaaS platform that simulates real-world attacks** to detect vulnerabilities before attackers do.
+## 💡 Solution
 
-- 🧠 **7+ attack modules** (SQLi, XSS, Command Injection, Brute Force, etc.)
-- 🐳 **True isolation** via Docker sandboxes
-- ⚡ **Real-time risk scoring** with remediation guidance
-- 🔄 **CI/CD native** (GitHub Actions integration)
+AttackSim introduces **continuous, automated attack simulation** integrated into the development lifecycle.
 
-> *"Pentests are expensive and sporadic. AttackSim makes security continuous."*
+Core principles:
 
----
-
-## 📌 Other Key Projects
-
-| Project | Description | Tech |
-|---------|-------------|------|
-| [**SmartCommerce**](https://github.com/OtavioTavaresDev/smartcommerce) | Production e-commerce with RBAC, JWT, analytics dashboard | Flask, PostgreSQL, Docker |
-| [**CyberGuardian**](https://github.com/OtavioTavaresDev/CyberGuardian) | Intrusion detection via log analysis and behavioral inspection | Python, psutil, scapy |
-| [**Arch-Linux-Forensic-Analyzer**](https://github.com/OtavioTavaresDev/Arch-Linux-Forensic-Analyzer) | Forensic analysis toolkit for Arch Linux | Python, Bash |
-| [**NetIntel**](https://github.com/OtavioTavaresDev/NetIntel) | Network intelligence and reconnaissance toolkit | Python, Scapy, Nmap |
-| [**Flask Security Testing Suite**](https://github.com/OtavioTavaresDev/Flask-Security-Testing-Suite) | Automated OWASP vulnerability testing framework | Python, Flask, Selenium |
+- 🐳 **Isolation-first execution** – Docker sandbox per attack  
+- 🧩 **Modular attack system** – plug-and-play modules  
+- 📊 **Developer-friendly reporting** – actionable insights  
+- 🔄 **CI/CD integration** – continuous validation  
 
 ---
 
-## 🛠️ Tech Stack & Tools
+## 🏗️ Architecture
+Frontend (Next.js)
+↓
+API Gateway (FastAPI)
+↓
+Attack Orchestrator
+↓
+Attack Modules (Pluggable)
+↓
+Sandbox Executor (Docker)
+↓
+Target Application
+↓
+Report Engine + Risk Scoring
+↓
+PostgreSQL (History & Analytics)
 
-### Languages
-![Python](https://img.shields.io/badge/Python-Expert-3776AB?logo=python)
-![JavaScript/TypeScript](https://img.shields.io/badge/TypeScript-Intermediate-3178C6?logo=typescript)
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3)
-![Bash](https://img.shields.io/badge/Bash-4EAA25?logo=gnubash)
-
-### Backend
-- **Frameworks:** FastAPI, Flask, Node.js/Express
-- **Auth:** JWT, RBAC, 2FA, password hashing
-- **Security:** OWASP Top 10 mitigation
-
-### Frontend
-- **Frameworks:** React, Next.js
-- **Styling:** Tailwind CSS, Chart.js
-
-### Databases
-- **SQL:** PostgreSQL, MySQL, SQLite
-- **Optimization:** Query tuning, data modeling
-
-### Infrastructure & Security
-![Docker](https://img.shields.io/badge/Docker-🐳-2496ED)
-![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?logo=githubactions)
-![JWT](https://img.shields.io/badge/JWT-000000?logo=jsonwebtokens)
-![OWASP](https://img.shields.io/badge/OWASP-000000?logo=owasp)
-
-### OS & Environment
-![Arch Linux](https://img.shields.io/badge/Arch_Linux-1793D1?logo=archlinux)
-![Ubuntu](https://img.shields.io/badge/Ubuntu-E95420?logo=ubuntu)
-![Windows](https://img.shields.io/badge/Windows-0078D6?logo=windows)
-![WSL](https://img.shields.io/badge/WSL-0a97f5?logo=linux)
-
-### Data & Analytics
-- Python (Pandas, NumPy), Power BI, Excel
+text
 
 ---
 
-## 📈 GitHub Stats
+## ⚡ Core Features
 
-<div align="center">
-  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=OtavioTavaresDev&show_icons=true&theme=radical&include_all_commits=true&count_private=true"/>
-  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=OtavioTavaresDev&layout=compact&langs_count=7&theme=radical"/>
-</div>
+### 🔥 Attack Simulation Engine
+- Real attack execution (not signature-based scanning)
+- Modular architecture for extensibility
+- Dynamic module loading
+
+### 🧪 Isolation & Safety
+- Dedicated Docker container per attack
+- Resource and execution constraints
+- No direct host interaction
+
+### 📊 Risk & Reporting
+- OWASP-aligned severity classification
+- Risk scoring (0–100)
+- Actionable remediation guidance
+
+### 🔄 Continuous Security
+- CI/CD integration (GitHub Actions, GitLab CI)
+- Automated security validation before deployment
+- Historical tracking of vulnerabilities
+
+### 🖥️ Modern Interface
+- Real-time scan visualization
+- Clean UI with Next.js + Tailwind
+- Developer-friendly workflows
 
 ---
 
-## 📫 Connect With Me
+## 🧩 Supported Attack Modules
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/otavioaugustodesouzatavares)
-[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/OtavioTavaresDev)
-[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:otaviotavaresdev@gmail.com)
+| Module | Description | Severity |
+|--------|-------------|----------|
+| SQL Injection | Error-based, blind, time-based detection | 🔴 CRITICAL |
+| XSS | Reflected and DOM-based | 🟠 HIGH |
+| Directory Traversal | Unauthorized file access | 🔴 CRITICAL |
+| Command Injection | OS command execution | 🔴 CRITICAL |
+| Brute Force | Authentication attack simulation | 🟠 HIGH |
+| Open Redirect | Unsafe redirect validation | 🟡 MEDIUM |
+| Security Headers | Missing security protections | 🟢 LOW |
 
 ---
 
-<div align="center">
-  <i>"Security is not a product, but a process."</i> – Bruce Schneier
-</div>
+## 📋 Requirements
+
+- Docker Engine 20.10+
+- Docker Compose 2.20+
+- 4GB RAM minimum (8GB recommended)
+- Linux, macOS, or WSL2 (Windows)
+
+---
+
+## 🚀 Quick Start (Docker)
+
+```bash
+git clone https://github.com/OtavioTavaresDev/attacksim.git
+cd attacksim
+docker-compose up -d --build
+After startup:
+
+Frontend → http://localhost:3000
+
+API Docs → http://localhost:8000/docs
+
+🔐 Environment Variables
+Create a .env file in the backend/ directory:
+
+env
+DATABASE_URL=postgresql://user:pass@db:5432/attacksim
+SECRET_KEY=your-secret-key-here
+JWT_ALGORITHM=HS256
+ACCESS_TOKEN_EXPIRE_MINUTES=30
+See .env.example for all options (copy it from the repo).
+
+🧪 Testing Environment
+AttackSim includes intentionally vulnerable endpoints for validation.
+
+⚠️ These endpoints are for testing purposes only.
+
+Example:
+
+text
+http://localhost:8000/api/v1/attacks/test-sqli?id=1
+🧩 Creating Custom Modules
+AttackSim is designed to be extensible. Create a new module:
+
+python
+from .base import AttackModule
+
+class CustomAttack(AttackModule):
+    name = "Custom Attack"
+    description = "Description of the attack"
+    severity = "high"
+
+    def run(self, target: str) -> dict:
+        return {
+            "success": True,
+            "severity": "high",
+            "details": "Vulnerability detected",
+            "remediation": "Steps to fix"
+        }
+Modules are automatically discovered by the orchestrator.
+
+🔄 CI/CD Integration Example
+yaml
+- name: Run Attack Simulation
+  run: |
+    curl -X POST "https://your-instance/api/v1/scan" \
+      -H "Authorization: Bearer ${{ secrets.ATTACKSIM_TOKEN }}" \
+      -H "Content-Type: application/json" \
+      -d '{
+        "target_url": "https://staging.app.com",
+        "module_name": "SQL Injection"
+      }'
+📂 Project Structure
+text
+attacksim/
+├── backend/           # FastAPI application
+├── frontend/          # Next.js dashboard
+├── docker/            # Dockerfiles and configs
+├── docker-compose.yml
+└── README.md
+🧠 Design Philosophy
+AttackSim was built around three principles:
+
+Realism → simulate actual attacker behavior
+
+Isolation → guarantee safe execution
+
+Continuity → integrate security into development flow
+
+🗺️ Roadmap
+Machine learning anomaly detection
+
+Advanced attack chaining
+
+Multi-target scanning
+
+Team collaboration features
+
+📄 License
+MIT License – see LICENSE file for details.
+
+⭐ Final Note
+AttackSim is not just a tool.
+It is a step toward a future where:
+
+Security is not a phase — it is a continuous process.
+
+<div align="center"> <b>Simulate. Detect. Evolve.</b> </div> ```
