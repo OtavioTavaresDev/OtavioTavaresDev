@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Otávio Tavares | DevSecOps & Full‑Stack Developer</title>
+  <meta name="description" content="Portfolio of Otávio Tavares – DevSecOps Specialist, Security Automation, and Scalable Systems.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🛡️%3C/text%3E%3C/svg%3E">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #0a0a0a;
+      color: #f5f5f5;
+    }
+    h1, h2, h3, h4 {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+    .glass {
+      background: rgba(10, 10, 10, 0.8);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(255,255,255,0.05);
+    }
+    .card {
+      background: #171717;
+      border-radius: 24px;
+      box-shadow: 0 10px 30px -5px rgba(0,0,0,0.5);
+      border: 1px solid #262626;
+      transition: all 0.2s ease;
+    }
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 20px 35px -8px rgba(0,0,0,0.7);
+      border-color: #404040;
+    }
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      padding: 0.2rem 0.7rem;
+      border-radius: 30px;
+      font-size: 0.7rem;
+      font-weight: 500;
+      letter-spacing: 0.01em;
+      background: #27272a;
+      color: #e4e4e7;
+    }
+    .section-title {
+      font-size: 2rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin-bottom: 2rem;
+      position: relative;
+      display: inline-block;
+      color: #f5f5f5;
+    }
+    .section-title::after {
+      content: '';
+      position: absolute;
+      bottom: -8px;
+      left: 0;
+      width: 60px;
+      height: 4px;
+      background: #3b82f6;
+      border-radius: 4px;
+    }
+    .lang-toggle {
+      transition: all 0.2s;
+    }
+  </style>
+</head>
+<body class="antialiased">
+
+<!-- Header -->
+<header class="glass fixed top-0 left-0 right-0 z-50 py-4 px-6 flex justify-between items-center">
+  <div class="flex items-center">
+    <span class="text-xl font-bold bg-gradient-to-r from-blue-500 to-indigo-400 bg-clip-text text-transparent">Otávio Tavares</span>
+  </div>
+  <div class="flex items-center gap-4 md:gap-6">
+    <nav class="hidden md:flex gap-6 font-medium text-sm">
+      <a href="#about" class="hover:text-blue-400 transition" data-i18n="nav.about">Sobre</a>
+      <a href="#projects" class="hover:text-blue-400 transition" data-i18n="nav.projects">Projetos</a>
+      <a href="#contact" class="hover:text-blue-400 transition" data-i18n="nav.contact">Contato</a>
+    </nav>
+    <!-- Language toggle -->
+    <button id="langToggle" class="lang-toggle w-9 h-9 rounded-full flex items-center justify-center bg-gray-800 hover:bg-gray-700 text-gray-200 text-sm font-medium">
+      <span>EN</span>
+    </button>
+  </div>
+</header>
+
+<!-- Hero -->
+<section class="pt-32 pb-16 px-6">
+  <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12">
+    <div class="md:w-3/5">
+      <div class="inline-block px-3 py-1 rounded-full bg-blue-950/60 text-blue-300 text-xs font-medium mb-5 border border-blue-800" data-i18n="hero.badge">
+        DevSecOps · Full‑Stack · Automação
+      </div>
+      <h1 class="text-4xl md:text-5xl font-bold tracking-tight mb-4">
+        <span data-i18n="hero.title1">Construindo sistemas</span><br>
+        <span class="bg-gradient-to-r from-blue-400 to-indigo-400 bg-clip-text text-transparent" data-i18n="hero.title2">seguros e escaláveis</span>
+      </h1>
+      <p class="text-lg text-gray-400 mb-8 max-w-xl" data-i18n="hero.description">
+        Especialista em segurança ofensiva, arquitetura de microsserviços e desenvolvimento full‑stack. 
+        Transformo requisitos em soluções robustas com foco em DevSecOps.
+      </p>
+      <div class="flex flex-wrap gap-4">
+        <a href="#projects" class="px-6 py-3 bg-white text-gray-900 rounded-full font-medium hover:scale-105 transition shadow-xl flex items-center gap-2" data-i18n="hero.projectsBtn">
+          Ver projetos <i class="fas fa-arrow-right text-sm"></i>
+        </a>
+        <a href="#contact" class="px-6 py-3 border border-gray-600 rounded-full font-medium hover:bg-gray-800 transition" data-i18n="hero.contactBtn">
+          Contato
+        </a>
+      </div>
+    </div>
+    <div class="md:w-2/5 flex justify-center">
+      <div class="relative">
+        <div class="absolute inset-0 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-full blur-3xl opacity-20"></div>
+        <img src="eu.jpg" alt="Otávio Tavares" class="relative w-64 h-64 md:w-80 md:h-80 rounded-full object-cover border-4 border-gray-800 shadow-2xl">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- About -->
+<section id="about" class="py-16 px-6 max-w-6xl mx-auto">
+  <h2 class="section-title" data-i18n="about.title">Sobre mim</h2>
+  <div class="grid grid-cols-1 lg:grid-cols-3 gap-10">
+    <div class="lg:col-span-2 card p-8">
+      <p class="mb-4 text-gray-300" data-i18n="about.p1">
+        Sou desenvolvedor com forte ênfase em <strong>DevSecOps e segurança ofensiva</strong>. Minha abordagem une desenvolvimento de software, automação de segurança e arquitetura de sistemas para entregar soluções resilientes desde a primeira linha de código.
+      </p>
+      <p class="mb-4 text-gray-300" data-i18n="about.p2">
+        Tenho experiência prática construindo plataformas de segurança automatizadas, APIs escaláveis, sistemas de detecção de intrusão e e‑commerces completos. Utilizo containers, CI/CD e testes contínuos para garantir qualidade e proteção.
+      </p>
+      <p class="text-gray-300" data-i18n="about.p3">
+        Além da tecnologia, também empreendo com a <a href="https://otaviotavaresdev.github.io/vorynex/" target="_blank" class="text-blue-400 hover:underline font-medium">Vorynex</a>, uma loja de ferramentas digitais para segurança e produtividade – um projeto que alia visão de negócio e habilidades técnicas.
+      </p>
+    </div>
+    <div class="card p-8">
+      <h3 class="text-xl font-semibold mb-5 text-white" data-i18n="about.stackTitle">Stack principal</h3>
+      <div class="flex flex-wrap gap-2">
+        <span class="badge">Python</span><span class="badge">FastAPI</span><span class="badge">Flask</span>
+        <span class="badge">Node.js</span><span class="badge">React</span><span class="badge">Next.js</span>
+        <span class="badge">Docker</span><span class="badge">Redis</span><span class="badge">PostgreSQL</span>
+        <span class="badge">MongoDB</span><span class="badge">GitHub Actions</span><span class="badge">Linux</span>
+        <span class="badge">OWASP</span><span class="badge">Pentesting</span><span class="badge">Tailwind</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Projects -->
+<section id="projects" class="py-16 px-6 bg-black/40">
+  <div class="max-w-6xl mx-auto">
+    <h2 class="section-title" data-i18n="projects.title">Projetos em destaque</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      
+      <!-- Card 1: DevSecOps Scanner -->
+      <div class="card p-6 flex flex-col h-full">
+        <div class="flex items-start justify-between mb-3">
+          <div class="w-10 h-10 rounded-xl bg-blue-900/40 flex items-center justify-center text-blue-300 text-xl">🛡️</div>
+          <span class="badge">Destaque</span>
+        </div>
+        <h3 class="text-xl font-bold mb-2">DevSecOps Scanner</h3>
+        <p class="text-gray-400 text-sm mb-4 flex-1" data-i18n="projects.scanner.desc">
+          Plataforma de análise de vulnerabilidades para dependências Python/Node.js. Microsserviços com FastAPI, Redis e relatórios PDF/Excel.
+        </p>
+        <div class="flex flex-wrap gap-1 mb-4">
+          <span class="text-xs text-gray-500">FastAPI</span><span class="text-xs text-gray-400 mx-1">•</span>
+          <span class="text-xs text-gray-500">Docker</span><span class="text-xs text-gray-400 mx-1">•</span>
+          <span class="text-xs text-gray-500">Redis</span><span class="text-xs text-gray-400 mx-1">•</span>
+          <span class="text-xs text-gray-500">PostgreSQL</span>
+        </div>
+        <a href="https://github.com/OtavioTavaresDev/devsecops-scanner" target="_blank" class="inline-flex items-center text-blue-400 hover:text-blue-300 font-medium text-sm">
+          GitHub <i class="fas fa-external-link-alt ml-1 text-xs"></i>
+        </a>
+      </div>
+      
+      <!-- Card 2: AttackSim -->
+      <div class="card p-6 flex flex-col h-full">
+        <div class="flex items-start justify-between mb-3">
+          <div class="w-10 h-10 rounded-xl bg-red-900/40 flex items-center justify-center text-red-300 text-xl">🔥</div>
+          <span class="badge">Segurança</span>
+        </div>
+        <h3 class="text-xl font-bold mb-2">AttackSim</h3>
+        <p class="text-gray-400 text-sm mb-4 flex-1" data-i18n="projects.attacksim.desc">
+          Plataforma SaaS de simulação contínua de ataques reais (SQLi, XSS, etc.) em sandboxes Docker isolados. Dashboard em Next.js.
+        </p>
+        <div class="flex flex-wrap gap-1 mb-4">
+          <span class="text-xs text-gray-500">Python</span><span class="text-xs text-gray-400 mx-1">•</span>
+          <span class="text-xs text-gray-500">FastAPI</span><span class="text-xs text-gray-400 mx-1">•</span>
+          <span class="text-xs text-gray-500">Next.js</span><span class="text-xs text-gray-400 mx-1">•</span>
+          <span class="text-xs text-gray-500">Docker</span>
+        </div>
+        <a href="https://github.com/OtavioTavaresDev/attacksim" target="_blank" class="inline-flex items-center text-blue-400 hover:text-blue-300 font-medium text-sm">
+          GitHub <i class="fas fa-external-link-alt ml-1 text-xs"></i>
+        </a>
+      </div>
+      
+      <!-- Card 3: SmartCommerce -->
+      <div class="card p-6 flex flex-col h-full">
+        <div class="flex items-start justify-between mb-3">
+          <div class="w-10 h-10 rounded-xl bg-green-900/40 flex items-center justify-center text-green-300 text-xl">🛒</div>
+          <span class="badge">Full‑Stack</span>
+        </div>
+        <h3 class="text-xl font-bold mb-2">SmartCommerce</h3>
+        <p class="text-gray-400 text-sm mb-4 flex-1" data-i18n="projects.smartcommerce.desc">
+          API de e‑commerce com autenticação JWT/RBAC, painel de análise em tempo real e pipeline CI/CD completo.
+        </p>
+        <div class="flex flex-wrap gap-1 mb-4">
+          <span class="text-xs text-gray-500">Flask</span><span class="text-xs text-gray-400 mx-1">•</span>
+          <span class="text-xs text-gray-500">PostgreSQL</span><span class="text-xs text-gray-400 mx-1">•</span>
+          <span class="text-xs text-gray-500">JWT</span><span class="text-xs text-gray-400 mx-1">•</span>
+          <span class="text-xs text-gray-500">Docker</span>
+        </div>
+        <a href="https://github.com/OtavioTavaresDev/smartcommerce" target="_blank" class="inline-flex items-center text-blue-400 hover:text-blue-300 font-medium text-sm">
+          GitHub <i class="fas fa-external-link-alt ml-1 text-xs"></i>
+        </a>
+      </div>
+      
+      <!-- Card 4: CyberGuardian -->
+      <div class="card p-6 flex flex-col h-full">
+        <div class="flex items-start justify-between mb-3">
+          <div class="w-10 h-10 rounded-xl bg-purple-900/40 flex items-center justify-center text-purple-300 text-xl">🛡️</div>
+          <span class="badge">IDS</span>
+        </div>
+        <h3 class="text-xl font-bold mb-2">CyberGuardian</h3>
+        <p class="text-gray-400 text-sm mb-4 flex-1" data-i18n="projects.cyberguardian.desc">
+          Sistema de Detecção de Intrusão (HIDS) baseado em análise comportamental de logs e processos, com autenticação 2FA.
+        </p>
+        <div class="flex flex-wrap gap-1 mb-4">
+          <span class="text-xs text-gray-500">Python</span><span class="text-xs text-gray-400 mx-1">•</span>
+          <span class="text-xs text-gray-500">psutil</span><span class="text-xs text-gray-400 mx-1">•</span>
+          <span class="text-xs text-gray-500">Linux</span><span class="text-xs text-gray-400 mx-1">•</span>
+          <span class="text-xs text-gray-500">2FA</span>
+        </div>
+        <a href="https://github.com/OtavioTavaresDev/CyberGuardian" target="_blank" class="inline-flex items-center text-blue-400 hover:text-blue-300 font-medium text-sm">
+          GitHub <i class="fas fa-external-link-alt ml-1 text-xs"></i>
+        </a>
+      </div>
+      
+      <!-- Card 5: Arch Linux Forensic Analyzer -->
+      <div class="card p-6 flex flex-col h-full">
+        <div class="flex items-start justify-between mb-3">
+          <div class="w-10 h-10 rounded-xl bg-yellow-900/40 flex items-center justify-center text-yellow-300 text-xl">🐧</div>
+          <span class="badge">Forense</span>
+        </div>
+        <h3 class="text-xl font-bold mb-2">Arch Linux Forensic Analyzer</h3>
+        <p class="text-gray-400 text-sm mb-4 flex-1" data-i18n="projects.forensic.desc">
+          Ferramenta forense que automatiza a coleta de evidências e análise de logs em sistemas Arch Linux.
+        </p>
+        <div class="flex flex-wrap gap-1 mb-4">
+          <span class="text-xs text-gray-500">Python</span><span class="text-xs text-gray-400 mx-1">•</span>
+          <span class="text-xs text-gray-500">Bash</span><span class="text-xs text-gray-400 mx-1">•</span>
+          <span class="text-xs text-gray-500">Linux</span>
+        </div>
+        <a href="https://github.com/OtavioTavaresDev/Arch-Linux-Forensic-Analyzer" target="_blank" class="inline-flex items-center text-blue-400 hover:text-blue-300 font-medium text-sm">
+          GitHub <i class="fas fa-external-link-alt ml-1 text-xs"></i>
+        </a>
+      </div>
+      
+      <!-- Card 6: Vorynex -->
+      <div class="card p-6 flex flex-col h-full">
+        <div class="flex items-start justify-between mb-3">
+          <div class="w-10 h-10 rounded-xl bg-gray-800 flex items-center justify-center text-gray-300 text-xl">🛍️</div>
+          <span class="badge">E‑commerce</span>
+        </div>
+        <h3 class="text-xl font-bold mb-2">Vorynex</h3>
+        <p class="text-gray-400 text-sm mb-4 flex-1" data-i18n="projects.vorynex.desc">
+          Loja de ferramentas digitais para segurança cibernética e produtividade. Checkout via WhatsApp e catálogo dinâmico.
+        </p>
+        <div class="flex flex-wrap gap-1 mb-4">
+          <span class="text-xs text-gray-500">HTML/CSS</span><span class="text-xs text-gray-400 mx-1">•</span>
+          <span class="text-xs text-gray-500">JavaScript</span><span class="text-xs text-gray-400 mx-1">•</span>
+          <span class="text-xs text-gray-500">Tailwind</span>
+        </div>
+        <a href="https://otaviotavaresdev.github.io/vorynex/" target="_blank" class="inline-flex items-center text-blue-400 hover:text-blue-300 font-medium text-sm">
+          Visitar loja <i class="fas fa-external-link-alt ml-1 text-xs"></i>
+        </a>
+      </div>
+    </div>
+    <div class="mt-10 text-center">
+      <a href="https://github.com/OtavioTavaresDev?tab=repositories" target="_blank" class="inline-flex items-center px-6 py-3 bg-gray-900 border border-gray-700 rounded-full font-medium hover:bg-gray-800 transition" data-i18n="projects.allRepos">
+        Ver todos os 50+ repositórios no GitHub <i class="fab fa-github ml-2"></i>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="py-16 px-6 max-w-6xl mx-auto">
+  <h2 class="section-title" data-i18n="contact.title">Contato</h2>
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+    <a href="mailto:otaviotavaresdev@gmail.com" class="card p-6 flex flex-col items-center text-center group">
+      <div class="w-14 h-14 rounded-2xl bg-blue-950/40 text-blue-400 flex items-center justify-center text-2xl mb-4 group-hover:scale-105 transition">
+        <i class="fas fa-envelope"></i>
+      </div>
+      <h3 class="font-semibold mb-1">Email</h3>
+      <p class="text-sm text-gray-400 break-all">otaviotavaresdev@gmail.com</p>
+    </a>
+    <a href="https://linkedin.com/in/otavioaugustodesouzatavares" target="_blank" class="card p-6 flex flex-col items-center text-center group">
+      <div class="w-14 h-14 rounded-2xl bg-blue-950/40 text-blue-400 flex items-center justify-center text-2xl mb-4 group-hover:scale-105 transition">
+        <i class="fab fa-linkedin-in"></i>
+      </div>
+      <h3 class="font-semibold mb-1">LinkedIn</h3>
+      <p class="text-sm text-gray-400">/otavioaugustodesouzatavares</p>
+    </a>
+    <a href="https://github.com/OtavioTavaresDev" target="_blank" class="card p-6 flex flex-col items-center text-center group">
+      <div class="w-14 h-14 rounded-2xl bg-gray-800 text-gray-200 flex items-center justify-center text-2xl mb-4 group-hover:scale-105 transition">
+        <i class="fab fa-github"></i>
+      </div>
+      <h3 class="font-semibold mb-1">GitHub</h3>
+      <p class="text-sm text-gray-400">/OtavioTavaresDev</p>
+    </a>
+    <a href="https://wa.me/5511998447863" target="_blank" class="card p-6 flex flex-col items-center text-center group">
+      <div class="w-14 h-14 rounded-2xl bg-green-950/40 text-green-400 flex items-center justify-center text-2xl mb-4 group-hover:scale-105 transition">
+        <i class="fab fa-whatsapp"></i>
+      </div>
+      <h3 class="font-semibold mb-1">WhatsApp</h3>
+      <p class="text-sm text-gray-400">+55 11 99844-7863</p>
+    </a>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="border-t border-gray-800 py-8 mt-10">
+  <div class="max-w-6xl mx-auto px-6 text-center text-sm text-gray-500">
+    <p data-i18n="footer.copyright">© 2026 Otávio Augusto de Souza Tavares. Todos os direitos reservados.</p>
+  </div>
+</footer>
+
+<script>
+  (function() {
+    // ========== Dados de internacionalização ==========
+    const i18n = {
+      'pt': {
+        'nav.about': 'Sobre',
+        'nav.projects': 'Projetos',
+        'nav.contact': 'Contato',
+        'hero.badge': 'DevSecOps · Full‑Stack · Automação',
+        'hero.title1': 'Construindo sistemas',
+        'hero.title2': 'seguros e escaláveis',
+        'hero.description': 'Especialista em segurança ofensiva, arquitetura de microsserviços e desenvolvimento full‑stack. Transformo requisitos em soluções robustas com foco em DevSecOps.',
+        'hero.projectsBtn': 'Ver projetos',
+        'hero.contactBtn': 'Contato',
+        'about.title': 'Sobre mim',
+        'about.p1': 'Sou desenvolvedor com forte ênfase em <strong>DevSecOps e segurança ofensiva</strong>. Minha abordagem une desenvolvimento de software, automação de segurança e arquitetura de sistemas para entregar soluções resilientes desde a primeira linha de código.',
+        'about.p2': 'Tenho experiência prática construindo plataformas de segurança automatizadas, APIs escaláveis, sistemas de detecção de intrusão e e‑commerces completos. Utilizo containers, CI/CD e testes contínuos para garantir qualidade e proteção.',
+        'about.p3': 'Além da tecnologia, também empreendo com a <a href="https://otaviotavaresdev.github.io/vorynex/" target="_blank" class="text-blue-400 hover:underline font-medium">Vorynex</a>, uma loja de ferramentas digitais para segurança e produtividade – um projeto que alia visão de negócio e habilidades técnicas.',
+        'about.stackTitle': 'Stack principal',
+        'projects.title': 'Projetos em destaque',
+        'projects.scanner.desc': 'Plataforma de análise de vulnerabilidades para dependências Python/Node.js. Microsserviços com FastAPI, Redis e relatórios PDF/Excel.',
+        'projects.attacksim.desc': 'Plataforma SaaS de simulação contínua de ataques reais (SQLi, XSS, etc.) em sandboxes Docker isolados. Dashboard em Next.js.',
+        'projects.smartcommerce.desc': 'API de e‑commerce com autenticação JWT/RBAC, painel de análise em tempo real e pipeline CI/CD completo.',
+        'projects.cyberguardian.desc': 'Sistema de Detecção de Intrusão (HIDS) baseado em análise comportamental de logs e processos, com autenticação 2FA.',
+        'projects.forensic.desc': 'Ferramenta forense que automatiza a coleta de evidências e análise de logs em sistemas Arch Linux.',
+        'projects.vorynex.desc': 'Loja de ferramentas digitais para segurança cibernética e produtividade. Checkout via WhatsApp e catálogo dinâmico.',
+        'projects.allRepos': 'Ver todos os 50+ repositórios no GitHub',
+        'contact.title': 'Contato',
+        'footer.copyright': '© 2026 Otávio Augusto de Souza Tavares. Todos os direitos reservados.'
+      },
+      'en': {
+        'nav.about': 'About',
+        'nav.projects': 'Projects',
+        'nav.contact': 'Contact',
+        'hero.badge': 'DevSecOps · Full‑Stack · Automation',
+        'hero.title1': 'Building',
+        'hero.title2': 'secure & scalable systems',
+        'hero.description': 'Specialist in offensive security, microservices architecture, and full‑stack development. I turn requirements into robust solutions with a DevSecOps mindset.',
+        'hero.projectsBtn': 'View projects',
+        'hero.contactBtn': 'Contact',
+        'about.title': 'About me',
+        'about.p1': 'I am a developer with a strong emphasis on <strong>DevSecOps and offensive security</strong>. My approach combines software development, security automation, and system architecture to deliver resilient solutions from the first line of code.',
+        'about.p2': 'I have hands‑on experience building automated security platforms, scalable APIs, intrusion detection systems, and complete e‑commerce solutions. I use containers, CI/CD, and continuous testing to ensure quality and protection.',
+        'about.p3': 'Beyond technology, I also run <a href="https://otaviotavaresdev.github.io/vorynex/" target="_blank" class="text-blue-400 hover:underline font-medium">Vorynex</a>, a digital tools store for cybersecurity and productivity – a project that combines business vision and technical skills.',
+        'about.stackTitle': 'Main stack',
+        'projects.title': 'Featured projects',
+        'projects.scanner.desc': 'Vulnerability analysis platform for Python/Node.js dependencies. Microservices with FastAPI, Redis, and PDF/Excel reports.',
+        'projects.attacksim.desc': 'SaaS platform for continuous real‑world attack simulation (SQLi, XSS, etc.) in isolated Docker sandboxes. Next.js dashboard.',
+        'projects.smartcommerce.desc': 'E‑commerce API with JWT/RBAC authentication, real‑time analytics dashboard, and full CI/CD pipeline.',
+        'projects.cyberguardian.desc': 'Host‑based Intrusion Detection System (HIDS) based on behavioral log and process analysis, with 2FA authentication.',
+        'projects.forensic.desc': 'Forensic tool that automates evidence collection and log analysis on Arch Linux systems.',
+        'projects.vorynex.desc': 'Digital tools store for cybersecurity and productivity. WhatsApp checkout and dynamic catalog.',
+        'projects.allRepos': 'See all 50+ repositories on GitHub',
+        'contact.title': 'Contact',
+        'footer.copyright': '© 2026 Otávio Augusto de Souza Tavares. All rights reserved.'
+      }
+    };
+
+    let currentLang = 'pt';
+    const htmlEl = document.documentElement;
+    const langToggle = document.getElementById('langToggle');
+
+    // ========== Aplicar tradução ==========
+    function applyTranslations(lang) {
+      document.querySelectorAll('[data-i18n]').forEach(el => {
+        const key = el.getAttribute('data-i18n');
+        if (i18n[lang] && i18n[lang][key]) {
+          el.innerHTML = i18n[lang][key];
+        }
+      });
+      htmlEl.lang = lang === 'pt' ? 'pt-BR' : 'en';
+      langToggle.querySelector('span').textContent = lang === 'pt' ? 'EN' : 'PT';
+    }
+
+    // ========== Event Listeners ==========
+    // Language toggle
+    langToggle.addEventListener('click', () => {
+      currentLang = currentLang === 'pt' ? 'en' : 'pt';
+      applyTranslations(currentLang);
+      localStorage.setItem('lang', currentLang);
+    });
+
+    // Scroll suave
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          const header = document.querySelector('header');
+          const offset = header ? header.offsetHeight : 0;
+          const top = target.getBoundingClientRect().top + window.pageYOffset - offset;
+          window.scrollTo({ top, behavior: 'smooth' });
+        }
+      });
+    });
+
+    // ========== Inicialização ==========
+    const savedLang = localStorage.getItem('lang') || 'pt';
+    currentLang = savedLang;
+    applyTranslations(currentLang);
+  })();
+</script>
+
+</body>
+</html>
