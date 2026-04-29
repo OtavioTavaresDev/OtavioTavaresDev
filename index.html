@@ -158,7 +158,49 @@
     <h2 class="section-title" data-i18n="projects.title">Projetos em destaque</h2>
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
       
-      <!-- Card 1: DevSecOps Scanner -->
+      <!-- Card 1: Pentest Recon Engine -->
+      <div class="card p-6 flex flex-col h-full">
+        <div class="flex items-start justify-between mb-3">
+          <div class="w-10 h-10 rounded-xl bg-blue-900/40 flex items-center justify-center text-blue-300 text-xl">🔍</div>
+          <span class="badge">Destaque</span>
+        </div>
+        <h3 class="text-xl font-bold mb-2">Pentest Recon Engine</h3>
+        <p class="text-gray-400 text-sm mb-4 flex-1" data-i18n="projects.pentest.desc">
+          Plataforma híbrida de reconhecimento ofensivo com pipeline modular de 14 etapas, GUI em Tkinter, brute force adaptativo, detecção de WAF e exportação profissional (JSON, MD, CSV, PDF).
+        </p>
+        <div class="flex flex-wrap gap-1 mb-4">
+          <span class="text-xs text-gray-500">Python</span><span class="text-xs text-gray-400 mx-1">•</span>
+          <span class="text-xs text-gray-500">Tkinter</span><span class="text-xs text-gray-400 mx-1">•</span>
+          <span class="text-xs text-gray-500">Nmap</span><span class="text-xs text-gray-400 mx-1">•</span>
+          <span class="text-xs text-gray-500">Gobuster</span>
+        </div>
+        <a href="https://github.com/OtavioTavaresDev/Pentest-Recon-Engine" target="_blank" class="inline-flex items-center text-blue-400 hover:text-blue-300 font-medium text-sm">
+          GitHub <i class="fas fa-external-link-alt ml-1 text-xs"></i>
+        </a>
+      </div>
+      
+      <!-- Card 2: Flask Security Testing Suite -->
+      <div class="card p-6 flex flex-col h-full">
+        <div class="flex items-start justify-between mb-3">
+          <div class="w-10 h-10 rounded-xl bg-orange-900/40 flex items-center justify-center text-orange-300 text-xl">🧪</div>
+          <span class="badge">Segurança</span>
+        </div>
+        <h3 class="text-xl font-bold mb-2">Flask Security Testing Suite</h3>
+        <p class="text-gray-400 text-sm mb-4 flex-1" data-i18n="projects.flask.desc">
+          Aplicação web vulnerável com painel administrativo de defesa ativa (rate limiting, auto‑ban, monitoramento em tempo real). Alvo oficial do Pentest Recon Engine.
+        </p>
+        <div class="flex flex-wrap gap-1 mb-4">
+          <span class="text-xs text-gray-500">Flask</span><span class="text-xs text-gray-400 mx-1">•</span>
+          <span class="text-xs text-gray-500">Tailwind</span><span class="text-xs text-gray-400 mx-1">•</span>
+          <span class="text-xs text-gray-500">Jinja2</span><span class="text-xs text-gray-400 mx-1">•</span>
+          <span class="text-xs text-gray-500">Threading</span>
+        </div>
+        <a href="https://github.com/OtavioTavaresDev/Flask-Security-Testing-Suite" target="_blank" class="inline-flex items-center text-blue-400 hover:text-blue-300 font-medium text-sm">
+          GitHub <i class="fas fa-external-link-alt ml-1 text-xs"></i>
+        </a>
+      </div>
+
+      <!-- Card 3: DevSecOps Scanner -->
       <div class="card p-6 flex flex-col h-full">
         <div class="flex items-start justify-between mb-3">
           <div class="w-10 h-10 rounded-xl bg-blue-900/40 flex items-center justify-center text-blue-300 text-xl">🛡️</div>
@@ -179,7 +221,7 @@
         </a>
       </div>
       
-      <!-- Card 2: AttackSim -->
+      <!-- Card 4: AttackSim -->
       <div class="card p-6 flex flex-col h-full">
         <div class="flex items-start justify-between mb-3">
           <div class="w-10 h-10 rounded-xl bg-red-900/40 flex items-center justify-center text-red-300 text-xl">🔥</div>
@@ -200,7 +242,7 @@
         </a>
       </div>
       
-      <!-- Card 3: SmartCommerce -->
+      <!-- Card 5: SmartCommerce -->
       <div class="card p-6 flex flex-col h-full">
         <div class="flex items-start justify-between mb-3">
           <div class="w-10 h-10 rounded-xl bg-green-900/40 flex items-center justify-center text-green-300 text-xl">🛒</div>
@@ -221,7 +263,7 @@
         </a>
       </div>
       
-      <!-- Card 4: CyberGuardian -->
+      <!-- Card 6: CyberGuardian -->
       <div class="card p-6 flex flex-col h-full">
         <div class="flex items-start justify-between mb-3">
           <div class="w-10 h-10 rounded-xl bg-purple-900/40 flex items-center justify-center text-purple-300 text-xl">🛡️</div>
@@ -242,7 +284,7 @@
         </a>
       </div>
       
-      <!-- Card 5: Arch Linux Forensic Analyzer -->
+      <!-- Card 7: Arch Linux Forensic Analyzer -->
       <div class="card p-6 flex flex-col h-full">
         <div class="flex items-start justify-between mb-3">
           <div class="w-10 h-10 rounded-xl bg-yellow-900/40 flex items-center justify-center text-yellow-300 text-xl">🐧</div>
@@ -262,7 +304,7 @@
         </a>
       </div>
       
-      <!-- Card 6: Vorynex -->
+      <!-- Card 8: Vorynex -->
       <div class="card p-6 flex flex-col h-full">
         <div class="flex items-start justify-between mb-3">
           <div class="w-10 h-10 rounded-xl bg-gray-800 flex items-center justify-center text-gray-300 text-xl">🛍️</div>
@@ -352,6 +394,8 @@
         'about.p3': 'Além da tecnologia, também empreendo com a <a href="https://otaviotavaresdev.github.io/vorynex/" target="_blank" class="text-blue-400 hover:underline font-medium">Vorynex</a>, uma loja de ferramentas digitais para segurança e produtividade – um projeto que alia visão de negócio e habilidades técnicas.',
         'about.stackTitle': 'Stack principal',
         'projects.title': 'Projetos em destaque',
+        'projects.pentest.desc': 'Plataforma híbrida de reconhecimento ofensivo com pipeline modular de 14 etapas, GUI em Tkinter, brute force adaptativo, detecção de WAF e exportação profissional (JSON, MD, CSV, PDF).',
+        'projects.flask.desc': 'Aplicação web vulnerável com painel administrativo de defesa ativa (rate limiting, auto‑ban, monitoramento em tempo real). Alvo oficial do Pentest Recon Engine.',
         'projects.scanner.desc': 'Plataforma de análise de vulnerabilidades para dependências Python/Node.js. Microsserviços com FastAPI, Redis e relatórios PDF/Excel.',
         'projects.attacksim.desc': 'Plataforma SaaS de simulação contínua de ataques reais (SQLi, XSS, etc.) em sandboxes Docker isolados. Dashboard em Next.js.',
         'projects.smartcommerce.desc': 'API de e‑commerce com autenticação JWT/RBAC, painel de análise em tempo real e pipeline CI/CD completo.',
@@ -378,6 +422,8 @@
         'about.p3': 'Beyond technology, I also run <a href="https://otaviotavaresdev.github.io/vorynex/" target="_blank" class="text-blue-400 hover:underline font-medium">Vorynex</a>, a digital tools store for cybersecurity and productivity – a project that combines business vision and technical skills.',
         'about.stackTitle': 'Main stack',
         'projects.title': 'Featured projects',
+        'projects.pentest.desc': 'Hybrid offensive reconnaissance platform with a 14‑step modular pipeline, Tkinter GUI, adaptive brute force, WAF detection, and professional export (JSON, MD, CSV, PDF).',
+        'projects.flask.desc': 'Vulnerable web application with active defense admin dashboard (rate limiting, auto‑ban, real‑time monitoring). Official target of the Pentest Recon Engine.',
         'projects.scanner.desc': 'Vulnerability analysis platform for Python/Node.js dependencies. Microservices with FastAPI, Redis, and PDF/Excel reports.',
         'projects.attacksim.desc': 'SaaS platform for continuous real‑world attack simulation (SQLi, XSS, etc.) in isolated Docker sandboxes. Next.js dashboard.',
         'projects.smartcommerce.desc': 'E‑commerce API with JWT/RBAC authentication, real‑time analytics dashboard, and full CI/CD pipeline.',
